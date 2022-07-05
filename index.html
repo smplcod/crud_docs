@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <!-- toastify css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- Left -->
+    <div class="left"></div>
+    <!-- Docs -->
+    <h1>Documentation</h1>
+    <!-- ToCreate -->
+    <br />
+    <button class="btn-to-create btn btn-primary">Create new document</button>
+
+    <br />
+
+    <div class="contacts">
+      <div class="container">
+        <div class="live-search">
+          <input
+            type="search"
+            class="live-search-inp form-control"
+            placeholder="Filter docs..."
+          />
+        </div>
+        <div class="list">
+          <div class="row"></div>
+        </div>
+
+        <ul class="list-group"></ul>
+        <ul class="pagination d-flex justify-content-center"></ul>
+      </div>
+    </div>
+    <!-- Right -->
+    <div class="right"></div>
+    <!-- Modal create -->
+    <div class="my-modal create">
+      <div class="my-modal-body">
+        <h2 class="modal-title">Creating new</h2>
+        <span class="close-modal">&#10006;</span>
+        <div>
+          <input type="text" class="inp-1 form-control" /><br />
+          <input type="text" class="inp-2 form-control" /><br />
+          <button class="btn-create btn btn-primary">Create</button>
+        </div>
+      </div>
+    </div>
+    <!-- Modal update -->
+    <div class="my-modal update">
+      <div class="my-modal-body">
+        <h2 class="modal-title">Update doc</h2>
+        <span class="close-modal">&#10006;</span>
+        <div>
+          <input type="text" class="inp-1 form-control" /><br />
+          <input type="text" class="inp-2 form-control" /><br />
+          <button class="btn-update btn btn-primary">Update</button>
+        </div>
+      </div>
+    </div>
+    <!-- toastify js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <!-- script -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
