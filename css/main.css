@@ -37,7 +37,7 @@ h1 {
 }
 
 .row__date img {
-	width:25px;
+	width:28px;
 	padding: 0 2px;
 	cursor: pointer;
 }
@@ -64,11 +64,12 @@ h1 {
 
 .my-modal-body {
   width: 500px;
-  height: 250px;
+  height: 265px;
   background: white;
   padding: 15px;
   position: relative;
   border-radius: 10px;
+	/* margin-bottom: 5px; */
 }
 
 .close-modal {
@@ -99,5 +100,24 @@ h1 {
 @media all and (max-width: 550px) {
 	.row__date span {
 		display: block;
+	}
+	.row__date img {
+		/* text-align: center; */
+	}
+}
+@media all and (max-width: 535px) {
+	.row__date {
+		display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 15px;
+	}
+	.row__date img {
+		width:80px;
+		display: block;
+	}
+	.row__date span {
+		text-align: center;
 	}
 }
